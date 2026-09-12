@@ -1,0 +1,13 @@
+# Source datasets are reproducible downloads and include files larger than GitHub's limit.
+data/raw/
+
+# Local browser captures and temporary profiles.
+.chrome-*/
+preview*.png
+
+# Local vendor checkout used for reference only.
+.vendor/
+
+# Python cache.
+__pycache__/
+*.py[cod]
