@@ -243,4 +243,13 @@ if (copyButton) copyButton.onclick = async () => {
     setTimeout(() => copyButton.textContent = 'COPY', 1400);
   } catch { copyButton.textContent = 'SELECT'; }
 };
+const copyCA = $('#copyCA');
+if (copyCA) copyCA.onclick = async () => {
+  const address = $('#caBox').dataset.address;
+  try {
+    await navigator.clipboard.writeText(address);
+    copyCA.textContent = 'COPIED';
+    setTimeout(() => copyCA.textContent = 'COPY', 1400);
+  } catch { copyCA.textContent = 'SELECT'; }
+};
 boot();
